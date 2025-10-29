@@ -1,0 +1,8 @@
+@use '../helpers' as *;
+
+.logo {
+  &__image {
+    max-width: fluid(179, 125);
+    max-height: fluid(50, 35);
+  }
+}
