@@ -27,5 +27,11 @@
 
   --transition-duration: 0.2s;
 
-  --border: #{rem(1)} solid var(--color-dark-20);
+  --border: #{rem(1)} solid var(--color-dark-15);
+
+  --gradient: linear-gradient(
+    45deg,
+    var(--color-dark-15) 64%,
+    var(--color-accent) 136%
+  );
 }
