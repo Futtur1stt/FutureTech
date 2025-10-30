@@ -1,0 +1,121 @@
+@use '../helpers' as *;
+
+.footer {
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: fluid(80, 40);
+    border-bottom: var(--border);
+  }
+
+  &__menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: rem(80);
+    width: 100%;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(40);
+      column-gap: rem(20);
+    }
+
+    @include mobile {
+      row-gap: rem(20);
+    }
+
+    &-box {
+      display: grid;
+      row-gap: fluid(36, 16);
+
+      @include tablet {
+        &:last-child {
+          grid-column: -1 / 1;
+
+          .footer__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: rem(12);
+          }
+        }
+      }
+    }
+
+    &-link {
+      font-weight: 500;
+      max-height: rem(26);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: rem(18);
+    min-height: rem(252);
+
+    @include tablet {
+      min-height: 0;
+    }
+  }
+
+  &__button {
+    padding: rem(10) rem(16);
+    border-radius: rem(8);
+
+    @include laptop {
+      padding: rem(8) rem(14);
+    }
+  }
+
+  &__icon {
+    @include mobile {
+      column-gap: rem(4);
+    }
+  }
+
+  &__extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: rem(40);
+
+    @include laptop {
+      padding-block: rem(24);
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: rem(20);
+    }
+  }
+ 
+  &__terms {
+    display: flex;
+
+    &-list {
+      display: flex;
+      align-items: center;
+    }
+
+    &-item:not(:last-child)::after {
+      content: '|';
+      margin-inline: rem(11);
+    }
+
+    &-link {
+      color: var(--color-dark-40);
+    }
+  }
+
+  &__soc1als {
+    @include mobile {
+      order: -1;
+    }
+  }
+
+  &__copyright {
+    color: var(--color-dark-40);
+  }
+}
