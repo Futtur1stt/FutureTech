@@ -1,0 +1,53 @@
+@use '../helpers' as *;
+
+.resources {
+  display: grid;
+  align-items: end;
+  row-gap: rem(20);
+  padding-left: rem(80);
+  padding-top: rem(150);
+  padding-bottom: rem(80);
+
+  @include laptop {
+    padding-left: rem(50);
+    padding-bottom: rem(50);
+  }
+
+  @include mobile {
+    padding-inline: rem(40);
+    padding-top: rem(100);
+    padding-bottom: rem(40);
+  }
+
+  &__main {
+    display: grid;
+    row-gap: rem(30);
+
+    @include laptop {
+      row-gap: rem(20);
+    }
+
+    @include tablet {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    row-gap: fluid(14, 4);
+  }
+
+  &__description {
+    color: var(--color-gray-60);
+  }
+
+  &__button {
+    max-width: rem(231);
+
+    @include mobile {
+      max-width: rem(310);
+      // justify-self: center;
+    }
+  }
+}

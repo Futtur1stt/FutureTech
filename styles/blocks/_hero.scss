@@ -1,0 +1,108 @@
+@use '../helpers' as *;
+
+.hero {
+  &__main {
+    @include tablet-above {
+      display: grid;
+      grid-template-columns: 60% auto;
+      grid-template-areas:
+        'body resources'
+        'metrics resources';
+    }
+  }
+
+  &__body {
+    display: grid;
+    row-gap: rem(30);
+    grid-area: body;
+    padding-top: rem(150);
+    padding-bottom: rem(100);
+    padding-right: rem(50);
+
+    @include laptop {
+      row-gap: rem(20);
+      padding-block: fluid(100, 35);
+    }
+
+    @include tablet {
+      padding-right: 0;
+      border-bottom: var(--border);
+    }
+
+    @include mobile {
+      row-gap: rem(14);
+    }
+  }
+
+  &__subtitle {
+    @include fluid-text(30, 18);
+
+    font-family: var(--font-family-accent);
+    font-weight: 500;
+    color: var(--color-dark-40);
+  }
+
+  &__wrapper {
+    display: grid;
+    row-gap: fluid(20, 10);
+  }
+
+  &__metrics {
+    grid-area: metrics;
+    border-top: var(--border);
+
+    @include tablet {
+      border-top: none;
+    }
+  }
+
+  &__resources {
+    grid-area: resources;
+    background: url(../../images/resources/1.png) 0 0/cover no-repeat;
+
+    @include tablet {
+      width: 100vw;
+      margin-left: calc(var(--container-padding-x) * -1);
+      border-bottom: var(--border);
+    }
+  }
+
+  &__advantages {
+    border-block: var(--border);
+
+    &-list {
+      @include tablet-above {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    &-item {
+      --paddingX: #{rem(80)};
+
+      &:not(:first-child) {
+        padding-left: var(--paddingX);
+      }
+
+      &:not(:last-child) {
+        padding-right: var(--paddingX);
+        border-right: var(--border);
+      }
+
+      @include tablet {
+        &:not(:first-child) {
+          padding-left: var(--container-padding-x);
+          padding-right: var(--container-padding-x);
+        }
+
+        &:not(:last-child) {
+          padding-right: var(--container-padding-x);
+          padding-left: var(--container-padding-x);
+          border-right: none;
+          border-bottom: var(--border);
+        }
+      }
+    }
+  }
+}
+  

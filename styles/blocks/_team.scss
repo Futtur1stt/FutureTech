@@ -1,0 +1,39 @@
+@use '../helpers' as *;
+
+.team {
+  display: flex;
+  justify-content: center;
+  padding: rem(10);
+  background-color: var(--color-dark-10);
+  border-radius: rem(100);
+  width: rem(218);
+  height: rem(88);
+
+  @include tablet {
+    width: rem(174);
+    height: rem(66);
+  }
+
+  &__person {
+    --personImageSize: #{rem(60)};
+
+    width: var(--personImageSize);
+    height: var(--personImageSize);
+    background-color: var(--color-dark-15);
+    border-radius: 50%;
+    border: rem(2) solid var(--color-dark-40);
+
+    @include laptop {
+      --personImageSize: #{rem(50)};
+      border-width: rem(1);
+    }
+
+    @include mobile {
+      --personImageSize: #{rem(40)};
+    }
+
+    &:not(:first-child) {
+      margin-left: calc(var(--personImageSize) / 4 * -1);
+    }
+  }
+}

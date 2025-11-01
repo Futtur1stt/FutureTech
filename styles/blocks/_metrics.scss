@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.metrics {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    padding: rem(50);
+    row-gap: rem(10);
+    border-right: none;
+    border-bottom: none;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &:not(:last-child) {
+      border-right: var(--border);
+    }
+
+    @include laptop {
+      padding: rem(30);
+      row-gap: rem(2);
+    }
+
+    @include mobile {
+      padding: rem(20);
+      row-gap: 0;
+    }
+  } 
+
+  &__key {
+    font-weight: 600;
+  }
+
+  &__sign {
+    color: var(--color-accent);
+  }
+}

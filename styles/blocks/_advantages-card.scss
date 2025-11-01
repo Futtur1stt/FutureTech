@@ -1,0 +1,80 @@
+@use '../helpers' as *;
+
+.advantages-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block: fluid(50, 30);
+  row-gap: rem(30);
+  
+  @include laptop {
+    row-gap: rem(20);
+  }
+
+  @include mobile {
+    row-gap: rem(16);
+  }
+
+  &__icon {
+    @include laptop {
+      width: rem(40);
+    }
+
+    @include mobile {
+      width: rem(30);
+    }
+  }
+
+  &__link {
+    --circleSize: #{rem(52)};
+    --circleMarginLeft: #{rem(20)};
+
+    position: relative;
+    display: grid;
+    row-gap: rem(4);
+    padding-right: calc(var(--circleSize) + var(--circleMarginLeft));
+
+    @include laptop {
+      --circleSize: #{rem(44)};
+      --circleMarginLeft: #{rem(14)};
+      row-gap: rem(2);
+    }
+
+    @include mobile {
+      --circleSize: #{rem(40)};
+    }
+
+    &::after {
+      @include square(var(--circleSize));
+
+      position: absolute;
+      top: 50%;
+      translate: 0 -50%;
+      content: '';
+      right: 0;
+      background: url(../../icons/dark-arrow_top.svg) center no-repeat;
+      background-color: var(--color-accent);
+      border-radius: 50%;
+    }
+  }
+
+  &__subtitle {
+    @include fluid-text(18, 14);
+
+    color: var(--color-gray-50);
+  }
+
+  &__description {
+    font-family: var(--font-family-accent);
+    color: var(--color-gray-60);
+    margin-top: rem(30);
+
+    @include laptop {
+      margin-top: rem(20);
+    }
+
+    @include mobile {
+      margin-top: rem(10);
+    }
+  }
+}
