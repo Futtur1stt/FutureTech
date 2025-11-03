@@ -1,0 +1,98 @@
+@use '../helpers' as *;
+
+.card {
+  @include tablet-above {
+    display: grid;
+    grid-template-columns: 37.5% auto;
+  }
+
+  &__preview {
+    display: grid;
+    row-gap: rem(16);
+    
+    &-main {
+      display: grid;
+      row-gap: fluid(50, 20);
+      padding-block: fluid(155, 50);
+      padding-right: rem(80);
+      border-right: var(--border);
+
+      @include laptop {
+        padding-right: rem(60);
+      }
+
+      @include tablet {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: var(--border);
+      }
+    }
+
+    &-image {
+      width: fluid(80, 50);
+    }
+
+    &-info {
+      display: grid;
+      row-gap: rem(16);
+    }
+
+    &-title {
+      font-weight: 600;
+    }
+
+    &-description {
+      color: var(--color-gray-60);
+    }
+  }
+
+  &__body {
+    padding-block: rem(80);
+    padding-left: rem(80);
+
+    @include laptop {
+      padding-block: rem(60);
+      padding-left: rem(60);
+    }
+
+    @include tablet {
+      padding-block: rem(30);
+      padding-left: 0;
+    }
+  }
+
+  &__grid {
+    display: grid;
+
+    &--2-cols {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(30);
+
+      @include laptop {
+        gap: rem(20);
+      }
+
+      @include tablet {
+        grid-template-columns: 1fr;
+        gap: rem(10);
+      }
+    }
+  }
+
+  &__tile {
+    display: grid;
+    row-gap: rem(20);
+
+    @include laptop {
+      row-gap: rem(16);
+    }
+
+    @include tablet {
+      row-gap: rem(4);
+    }
+
+    &-subtitle {
+      color: var(--color-gray-60);
+    }
+  }
+}
