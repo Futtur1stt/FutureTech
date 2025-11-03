@@ -1,0 +1,65 @@
+@use '../helpers' as *;
+
+.tabs {
+  &__header {
+    border-bottom: var(--border);
+
+    @include tablet {
+      overflow-x: scroll;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: rem(20);
+    padding-block: fluid(50, 20);
+
+    @include laptop {
+      column-gap: rem(14);
+    }
+
+    @include tablet {
+      width: max-content;
+    }
+  }
+
+  &__button {
+    padding: rem(30) rem(24);
+    background-color: transparent;
+    color: var(--color-gray-60);
+    border: var(--border);
+    border-radius: rem(8);
+    font-size: rem(18);
+    white-space: nowrap;
+
+    @include hover {
+      color: var(--color-accent);
+      border-color: var(--color-accent);
+    }
+
+    &.is-active {
+      background-color: var(--color-dark-10);
+      color: var(--color-light);
+    }
+
+    @include laptop {
+      font-size: rem(14);
+      padding: rem(24) rem(20);
+    }
+
+    @include tablet {
+      padding: rem(18) rem(16);
+    }
+  }
+
+  &__content {
+    &:not(.is-active) {
+      display: none;
+    }
+
+    &:focus-visible {
+      outline-offset: -1rem;
+    }
+  }
+}

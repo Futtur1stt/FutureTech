@@ -5,6 +5,28 @@
     background-color: var(--color-dark-10);
     padding-block: fluid(120, 40);
 
+    &-inner {
+      &:has(.section__view) {
+          display: grid;
+          align-items: center;
+          column-gap: 1rem;
+
+          @include tablet {
+            display: flex;
+            flex-direction: column;
+            row-gap: rem(30);
+          }
+
+          @include mobile-above {
+            grid-template-columns: 1fr auto;
+          }
+
+          @include mobile {
+            row-gap: rem(30);
+          }
+      }
+    }
+
     &-info {
       display: flex;
       flex-direction: column;
@@ -16,5 +38,13 @@
     justify-self: start;
   }
 
-  
+  &__link {
+    @include tablet {
+      min-width: rem(358);
+    }
+  }
+
+  &__body {
+    border-block: var(--border);
+  }
 }
