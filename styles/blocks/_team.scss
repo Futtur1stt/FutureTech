@@ -6,13 +6,13 @@
   padding: rem(10);
   background-color: var(--color-dark-10);
   border-radius: rem(100);
-  width: rem(218);
-  height: rem(88);
+  // width: rem(218);
+  // height: rem(88);
 
-  @include tablet {
-    width: rem(174);
-    height: rem(66);
-  }
+  // @include tablet {
+  //   width: rem(174);
+  //   height: rem(66);
+  // }
 
   &__person {
     --personImageSize: #{rem(60)};
