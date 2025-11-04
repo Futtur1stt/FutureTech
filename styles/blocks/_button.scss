@@ -34,4 +34,10 @@
     padding: rem(14) rem(20);
     font-weight: 500;
   }
+
+  &--dark-grey {
+    background-color: var(--color-dark-10);
+    max-width: rem(519);
+    max-height: rem(63);
+  }
 }
