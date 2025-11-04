@@ -1,0 +1,38 @@
+@use '../helpers' as *;
+
+.download {
+  display: inline-grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  column-gap: rem(50);
+
+  @include laptop {
+    column-gap: rem(30);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(4);
+
+    @include laptop {
+      row-gap: rem(2);
+    }
+  }
+
+  &__subtitle {
+    color: var(--color-gray-60);
+    white-space: nowrap;
+  }
+
+  &__team {
+    --personImageSize: #{rem(50)};
+
+    background-color: var(--color-dark);
+    border-radius: rem(12);
+
+    @include laptop {
+      --personImageSize: #{rem(40)};
+    }
+  }
+}
