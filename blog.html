@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" 
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Future Tech | Blog</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script type="module" src="./scripts/main.js"></script>
+</head>
+<body>
+  <header class="header" data-js-header>
+    <div class="header__promo">
+      <div class="header__promo-wrapper container">
+        <a class="header__promo-link" href="/">
+          <span class="icon icon--yellow-arrow">Subscribe to our Newsletter For New & latest Blogs and Resources</span>
+        </a>
+      </div>
+    </div>
+    <div class="header__body">
+      <div class="header__body-wrapper container">
+        <a 
+          class="header__logo logo" 
+          href="/" 
+          aria-label="Home" 
+          title="Home"
+        >
+          <img 
+            class="logo__image" 
+            src="./images/Logo.svg" 
+            alt=""
+            width="179" height="50"  
+          >
+        </a>
+        <div class="header__overlay" data-js-header-overlay>
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./index.html">Home</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./news.html">News</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link is-active" href="./podcasts.html" aria-current="true">Podcasts</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./resources.html">Resources</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__contact-us-link button button--accent" href="./contact.html">
+            Contact Us
+          </a>
+        </div>
+        <button 
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          aria-label="Open menu" 
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="about" aria-labelledby="about-title">
+      <div class="about__wrapper container">
+        <header class="about__header">
+          <img
+            class="about__image" 
+            src="./images/about/icon-1.svg" 
+            alt=""
+            width="150" height="150" loading="lazy" 
+          >
+          <div class="about__main">
+            <p class="about__subtitle tag">Learn, Connect, and Innovate</p>
+            <h2 class="about__title" id="about-title">Be Part of the Future Tech Revolution</h2>
+          </div>
+          <div class="about__description">
+            <p>
+              Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.
+            </p>
+          </div>
+        </header>
+        <ul class="about__list">
+          <li class="about__item">
+            <a class="about-card tile" href="/">
+              <h3 class="about-card__title circle-icon h5">Resource Access</h3>
+              <div class="about-card__subtitle">
+                <p>
+                  Visitors can access a wide range of resources, including ebooks, whitepapers, reports.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="about__item">
+            <a class="about-card tile" href="/">
+              <h3 class="about-card__title circle-icon h5">Community Forum</h3>
+              <div class="about-card__subtitle">
+                <p>
+                  Join our active community forum to discuss industry trends, share insights, and collaborate with peers.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="about__item">
+            <a class="about-card tile" href="/">
+              <h3 class="about-card__title circle-icon h5">Tech Events</h3>
+              <div class="about-card__subtitle">
+                <p>
+                  Stay updated on upcoming tech events, webinars, and conferences to enhance your knowledge.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper container">
+      <div class="footer__main">
+        <nav class="footer__menu">
+          <div class="footer__menu-box">
+            <a class="footer__menu-link h6" href="/">Home</a>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Feautures</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Blogs</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Resources</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Testimonials</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Contact us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Newsletter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-box">
+            <a class="footer__menu-link h6" href="/">News</a>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Trending Stories</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Featured Videos</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Technology</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Health</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Politics</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Environment</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-box">
+            <a class="footer__menu-link h6" href="/">Blogs</a>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Quantum Computing</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">AI Ethics</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Space Exploration</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Biotechnology</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Renewable Energy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">Biohacking</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-box">
+            <a class="footer__menu-link h6" href="/">Podcasts</a>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">AI Revolution</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">AI Revolution</a>
+                <span class="badge">New</span>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">TechTalk AI</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__item-link" href="/">AI Conversations</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu-box">
+            <a class="footer__menu-link h6" href="/">Resources</a>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__button button" href="/">
+                  <span class="footer__icon icon icon--yellow-arrow">Whitepapers</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__button button" href="/">
+                  <span class="footer__icon icon icon--yellow-arrow">Ebooks</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__button button" href="/">
+                  <span class="footer__icon icon icon--yellow-arrow">Reports</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__button button" href="/">
+                  <span class="footer__icon icon icon--yellow-arrow">Research Papers</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__extra">
+        <div class="footer__terms">
+          <ul class="footer__terms-list">
+            <li class="footer__terms-item">
+              <a class="footer__terms-link" href="/">Terms & Conditions</a>
+            </li>
+            <li class="footer__terms-item">
+              <a class="footer__terms-link" href="/">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__soc1als soc1als">
+          <ul class="soc1als__list">
+            <li class="soc1als__item">
+              <a class="soc1als__link" href="/" aria-label="Twitter" title="Twitter">
+                <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.457 4.78075C20.4663 4.99195 20.4663 5.19356 20.4663 5.40476C20.4755 11.808 15.7711 19.2 7.16783 19.2C4.63038 19.2 2.13924 18.4416 0 17.0208C0.370431 17.0688 0.740861 17.088 1.11129 17.088C3.21349 17.088 5.26011 16.3584 6.91779 15.0048C4.91746 14.9664 3.15792 13.6128 2.54671 11.6352C3.25053 11.7792 3.97287 11.7504 4.65816 11.5488C2.48188 11.1072 0.916816 9.11997 0.907555 6.80636C0.907555 6.78716 0.907555 6.76796 0.907555 6.74876C1.55581 7.12316 2.28741 7.33436 3.02827 7.35356C0.981641 5.93276 0.342648 3.10075 1.58359 0.883141C3.96361 3.91675 7.46418 5.75036 11.224 5.95196C10.8444 4.27195 11.363 2.50555 12.5761 1.31514C14.4561 -0.518463 17.4195 -0.422463 19.1976 1.52634C20.244 1.31514 21.2535 0.911941 22.1703 0.34554C21.8184 1.46874 21.0868 2.41915 20.1144 3.02395C21.0405 2.90875 21.948 2.64955 22.8 2.26555C22.1703 3.24475 21.3738 4.08955 20.457 4.78075Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a class="soc1als__link" href="/" aria-label="Medium" title="Medium">
+                <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.5374 6.8277C13.5374 10.5984 10.5069 13.6552 6.76883 13.6552C3.03073 13.6552 0 10.5977 0 6.8277C0 3.05767 3.0305 0 6.76883 0C10.5072 0 13.5374 3.05698 13.5374 6.8277Z" fill="white"/>
+                  <path d="M20.9627 6.82814C20.9627 10.3775 19.4474 13.2559 17.5783 13.2559C15.7091 13.2559 14.1938 10.3775 14.1938 6.82814C14.1938 3.27883 15.7089 0.400391 17.578 0.400391C19.4472 0.400391 20.9625 3.2779 20.9625 6.82814" fill="white"/>
+                  <path d="M24 6.82759C24 10.0069 23.4672 12.5858 22.8097 12.5858C22.1522 12.5858 21.6196 10.0076 21.6196 6.82759C21.6196 3.64758 22.1525 1.06934 22.8097 1.06934C23.467 1.06934 24 3.64735 24 6.82759Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li class="soc1als__item">
+              <a class="soc1als__link" href="/" aria-label="LinkedIn" title="LinkedIn">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.2646 0H1.53544C1.12822 0 0.737673 0.16177 0.449722 0.449722C0.16177 0.737673 0 1.12822 0 1.53544V19.2646C0 19.6718 0.16177 20.0623 0.449722 20.3503C0.737673 20.6382 1.12822 20.8 1.53544 20.8H19.2646C19.6718 20.8 20.0623 20.6382 20.3503 20.3503C20.6382 20.0623 20.8 19.6718 20.8 19.2646V1.53544C20.8 1.12822 20.6382 0.737673 20.3503 0.449722C20.0623 0.16177 19.6718 0 19.2646 0ZM6.19956 17.719H3.07233V7.78556H6.19956V17.719ZM4.63378 6.409C4.27905 6.407 3.93286 6.29997 3.6389 6.10141C3.34495 5.90285 3.11639 5.62166 2.98209 5.29333C2.84779 4.965 2.81376 4.60425 2.88429 4.25659C2.95483 3.90894 3.12676 3.58997 3.3784 3.33994C3.63004 3.08991 3.95011 2.92003 4.2982 2.85173C4.6463 2.78343 5.00683 2.81978 5.33429 2.95619C5.66175 3.09259 5.94147 3.32294 6.13814 3.61817C6.33481 3.9134 6.43961 4.26027 6.43933 4.615C6.44268 4.8525 6.39818 5.08823 6.30848 5.30816C6.21878 5.52809 6.08572 5.72771 5.91723 5.89512C5.74874 6.06254 5.54827 6.19431 5.32777 6.2826C5.10727 6.37088 4.87125 6.41387 4.63378 6.409ZM17.7262 17.7277H14.6004V12.3009C14.6004 10.7004 13.9201 10.2064 13.0419 10.2064C12.1146 10.2064 11.2046 10.9056 11.2046 12.3413V17.7277H8.07733V7.79278H11.0847V9.16933H11.1251C11.427 8.55833 12.4843 7.514 14.0978 7.514C15.8427 7.514 17.7277 8.54967 17.7277 11.583L17.7262 17.7277Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">
+          <p>© <time datetime="2024">2024</time> FutureTech. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
