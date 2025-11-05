@@ -19,6 +19,16 @@
     padding-bottom: rem(40);
   }
 
+  &__team {
+    width: rem(218);
+    height: rem(88);
+
+    @include tablet {
+      width: rem(174);
+      height: rem(66);
+    }
+  }
+
   &__main {
     display: grid;
     row-gap: rem(30);
