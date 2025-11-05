@@ -922,6 +922,16 @@ button[aria-label]::before {
     padding-bottom: 2.5rem;
   }
 }
+.resources__team {
+  width: 13.625rem;
+  height: 5.5rem;
+}
+@media (width <= 63.99875rem) {
+  .resources__team {
+    width: 10.875rem;
+    height: 4.125rem;
+  }
+}
 .resources__main {
   display: grid;
   row-gap: 1.875rem;
