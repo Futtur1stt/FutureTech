@@ -1154,6 +1154,7 @@ button[aria-label]::before {
   .section__header-inner:has(.section__view) {
     display: flex;
     flex-direction: column;
+    align-items: start;
     row-gap: 1.875rem;
   }
 }
@@ -1591,6 +1592,156 @@ button[aria-label]::before {
 @media (width <= 90.06125rem) {
   .download__team {
     --personImageSize: 2.5rem;
+  }
+}
+
+.bordered-grid {
+  --columns: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+}
+.bordered-grid--2-cols {
+  --columns: 2;
+}
+.bordered-grid--3-cols {
+  --columns: 3;
+}
+@media (width > 63.99875rem) {
+  .bordered-grid--3-cols .bordered-grid__item {
+    /* Элементы во 1-ой и 2-ой колонке */
+    /* Элементы в 1 ряду */
+    /* Элементы во 2-ой и 3-ой колонке */
+  }
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n+1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1) {
+    padding-right: 3.125rem;
+    border-right: var(--border);
+  }
+}
+@media (width > 63.99875rem) and (width <= 90.06125rem) {
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n+1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1) {
+    padding-right: 2.5rem;
+  }
+}
+@media (width > 63.99875rem) and (width <= 63.99875rem) {
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n+1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1) {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+@media (width > 63.99875rem) {
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1) {
+    position: relative;
+  }
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1)::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: auto;
+    bottom: 0;
+    translate: -50%;
+    width: 100vw;
+    height: 0.0625rem;
+    background-color: var(--color-dark-15);
+  }
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n) {
+    padding-left: 3.125rem;
+  }
+}
+@media (width > 63.99875rem) and (width <= 90.06125rem) {
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n) {
+    padding-left: 2.5rem;
+  }
+}
+@media (width > 63.99875rem) and (width <= 63.99875rem) {
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n) {
+    padding-left: 0;
+  }
+}
+@media (width <= 63.99875rem) {
+  .bordered-grid--3-cols {
+    --columns: 1;
+  }
+  .bordered-grid--3-cols .bordered-grid__item:not(:last-child) {
+    border-bottom: var(--border);
+  }
+  .bordered-grid--3-cols::after {
+    display: none;
+  }
+}
+.bordered-grid__item {
+  padding-block: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.5rem;
+}
+@media (width <= 90.06125rem) {
+  .review-card {
+    row-gap: 1.875rem;
+  }
+}
+@media (width <= 90.06125rem) {
+  .review-card .person-card__image {
+    width: 3.125rem;
+  }
+}
+.review-card .person-card__role {
+  color: var(--color-dark-40);
+}
+.review-card__body {
+  position: relative;
+  padding: clamp(1.25rem, 1.0906862745rem + 0.6535947712vw, 1.875rem);
+  padding-top: clamp(1.875rem, 1.556372549rem + 1.3071895425vw, 3.125rem);
+  color: var(--color-light);
+  background-color: var(--color-dark-10);
+  border: var(--border);
+  border-radius: 0.75rem;
+  text-align: center;
+  height: 100%;
+}
+@media (width <= 63.99875rem) {
+  .review-card__body {
+    max-width: 37.5rem;
+  }
+}
+.review-card__rating {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  top: 0;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.4375rem;
+  padding: 0.625rem 1rem;
+  background-color: var(--color-dark);
+  border: var(--border);
+  border-radius: 6.25rem;
+}
+@media (width <= 90.06125rem) {
+  .rating {
+    column-gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+.rating__star {
+  --size: 1.5rem;
+  width: var(--size);
+  height: var(--size);
+  background: url(../../icons/star_gray.svg) center/contain no-repeat;
+}
+.rating__star.is-active {
+  background: url(../../icons/star_yellow.svg) center/contain no-repeat;
+}
+@media (width <= 90.06125rem) {
+  .rating__star {
+    --size: 1.25rem;
   }
 }
 
