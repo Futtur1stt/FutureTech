@@ -33,6 +33,18 @@
   translate: -50% -50%;
 }
 
+@mixin abs-x {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+}
+
+@mixin abs-y {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+}
+
 @mixin square($size) {
   width: $size;
   height: $size;
@@ -49,4 +61,25 @@
   clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
+}
+
+@mixin full-vw-centered-line(
+  $property: top,
+  $left: 50%,
+  $right: auto,
+  $translate: -50%
+) {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: $left;
+    right: $right;
+    #{$property}: 0;
+    translate: $translate;
+    width: 100vw;
+    height: rem(1);
+    background-color: var(--color-dark-15);
+  }
 }
