@@ -340,6 +340,560 @@
       </div>
     </section>
 
+    <section class="section" aria-labelledby="news-hub-title">
+      <header class="section__header">
+        <div class="section__header-inner container">
+          <div class="section__header-info">
+            <p class="section__subtitle tag">Welcome to Our News Hub</p>
+            <h2 class="section__title" id="news-hub-title">Discover the World of Headlines</h2>
+          </div>
+          <div class="section__view">
+            <a class="section__link button" href="/">
+              <span class="icon icon--yellow-arrow">View All News</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="section__body tabs" data-js-tabs>
+        <h3 class="visually-hidden" id="blog-category-title">News categories</h3>
+        <header class="tabs__header">
+          <div 
+            class="tabs__buttons container"
+            role="tablist"
+            aria-labelledby="blog-category-title"  
+          >
+            <button 
+              class="tabs__button is-active"
+              id="tab-1"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-1"
+              data-js-tabs-button
+              aria-selected="true"
+            >
+              All
+            </button>
+            <button 
+              class="tabs__button"
+              id="tab-2"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-2"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Technology
+            </button>
+            <button 
+              class="tabs__button"
+              id="tab-3"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-3"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Politics
+            </button>
+            <button 
+              class="tabs__button"
+              id="tab-4"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-4"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Health
+            </button>
+            <button 
+              class="tabs__button"
+              id="tab-5"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-5"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Environment
+            </button>
+            <button 
+              class="tabs__button"
+              id="tab-6"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel-6"
+              data-js-tabs-button
+              aria-selected="false"
+              tabindex="-1"
+            >
+              Sports
+            </button>
+          </div>
+        </header>
+        <div class="tabs__body">
+          <div 
+            class="tabs__content is-active" 
+            id="tabpanel-1"
+            aria-labelledby="tab-1"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            <ul class="list">
+              <li class="list__item">
+                <article class="blog-card container">
+                  <div class="blog-card__person person-card">
+                    <img
+                      class="person-card__image" 
+                      src="./images/team/1.png" 
+                      alt=""
+                      width="80" height="80" loading="lazy" 
+                    >
+                    <div class="person-card__wrapper">
+                      <p class="person-card__name">John Techson</p>
+                      <p class="person-card__role">Quantum Computing</p>
+                    </div>
+                  </div>
+                  <div class="blog-card__main">
+                    <time class="blog-card__date" datetime="2023-10-15">October 15, 2023</time>
+                    <div class="blog-card__info">
+                      <h4 class="blog-card__title">Tech Giants Announce New Product Line</h4>
+                      <div class="blog-card__description">
+                        <p>Explore the latest innovations from tech industry leaders, unveiling new products that promise to transform the digital landscape</p> 
+                      </div>
+                    </div>
+                    <div class="blog-card__actions actions">
+                      <ul class="actions__list">
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button is-active"
+                            type="button"
+                            aria-label="Dislike" 
+                            title="Dislike"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 20.9107L11.6384 20.9071L11.6158 20.8949C11.5965 20.8844 11.5689 20.8693 11.5336 20.8496C11.4629 20.8101 11.3612 20.7524 11.233 20.6769C10.9765 20.5261 10.6132 20.3039 10.1785 20.015C9.31074 19.4381 8.15122 18.5901 6.9886 17.5063C4.68781 15.3615 2.25 12.1751 2.25 8.25C2.25 5.32194 4.7136 3 7.6875 3C9.43638 3 11.0023 3.79909 12 5.0516C12.9977 3.79909 14.5636 3 16.3125 3C19.2864 3 21.75 5.32194 21.75 8.25C21.75 12.1751 19.3122 15.3615 17.0114 17.5063C15.8488 18.5901 14.6893 19.4381 13.8215 20.015C13.3868 20.3039 13.0235 20.5261 12.767 20.6769C12.6388 20.7524 12.5371 20.8101 12.4664 20.8496C12.4311 20.8693 12.4035 20.8844 12.3842 20.8949L12.3616 20.9071L12.355 20.9107L12.3523 20.9121C12.1323 21.0289 11.8677 21.0289 11.6477 20.9121L11.645 20.9107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>24.5k</span>
+                          </button>
+                        </li>
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button"
+                            type="button"
+                            aria-label="Comment" 
+                            title="Comment"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.48581 19.1888C9.54657 19.7083 10.7392 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.6401 4.49356 15.165 5.34026 16.4341M8.48581 19.1888L4 20L5.34026 16.4341M8.48581 19.1888L8.49231 19.1877M5.34026 16.4341L5.34154 16.4308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>50</span>
+                          </button>
+                        </li>
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button"
+                            type="button"
+                            aria-label="Share" 
+                            title="Share"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 13.9616L4.1719 11.2951C3.36454 10.9281 3.39898 9.7697 4.22673 9.45134L18.8999 3.80781C19.7087 3.49675 20.5033 4.29139 20.1922 5.10013L14.5487 19.7733C14.2303 20.6011 13.072 20.6355 12.705 19.8281L10.0384 13.9616ZM10.0384 13.9616L14.4231 9.57704" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>20</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="blog-card__link button" href="/">
+                    <span class="icon icon--yellow-arrow">Read More</span>
+                  </a>
+                </article>
+              </li>
+              <li class="list__item">
+                <article class="blog-card container">
+                  <div class="blog-card__person person-card">
+                    <img
+                      class="person-card__image" 
+                      src="./images/blog/2.png" 
+                      alt=""
+                      width="80" height="80" loading="lazy" 
+                    >
+                    <div class="person-card__wrapper">
+                      <p class="person-card__name">Sarah Ethicist</p>
+                      <p class="person-card__role">AI Ethics</p>
+                    </div>
+                  </div>
+                  <div class="blog-card__main">
+                    <time class="blog-card__date" datetime="2023-10-11">October 11, 2023</time>
+                    <div class="blog-card__info">
+                      <h4 class="blog-card__title">The Future of Autonomous Vehicles</h4>
+                      <div class="blog-card__description">
+                        <p>An in-depth analysis of the rapid advancements in autonomous vehicle technology and their impact on transportation.</p> 
+                      </div>
+                    </div>
+                    <div class="blog-card__actions actions">
+                      <ul class="actions__list">
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button"
+                            type="button"
+                            aria-label="Dislike" 
+                            title="Dislike"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 20.9107L11.6384 20.9071L11.6158 20.8949C11.5965 20.8844 11.5689 20.8693 11.5336 20.8496C11.4629 20.8101 11.3612 20.7524 11.233 20.6769C10.9765 20.5261 10.6132 20.3039 10.1785 20.015C9.31074 19.4381 8.15122 18.5901 6.9886 17.5063C4.68781 15.3615 2.25 12.1751 2.25 8.25C2.25 5.32194 4.7136 3 7.6875 3C9.43638 3 11.0023 3.79909 12 5.0516C12.9977 3.79909 14.5636 3 16.3125 3C19.2864 3 21.75 5.32194 21.75 8.25C21.75 12.1751 19.3122 15.3615 17.0114 17.5063C15.8488 18.5901 14.6893 19.4381 13.8215 20.015C13.3868 20.3039 13.0235 20.5261 12.767 20.6769C12.6388 20.7524 12.5371 20.8101 12.4664 20.8496C12.4311 20.8693 12.4035 20.8844 12.3842 20.8949L12.3616 20.9071L12.355 20.9107L12.3523 20.9121C12.1323 21.0289 11.8677 21.0289 11.6477 20.9121L11.645 20.9107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>32k</span>
+                          </button>
+                        </li>
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button"
+                            type="button"
+                            aria-label="Comment" 
+                            title="Comment"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.48581 19.1888C9.54657 19.7083 10.7392 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.6401 4.49356 15.165 5.34026 16.4341M8.48581 19.1888L4 20L5.34026 16.4341M8.48581 19.1888L8.49231 19.1877M5.34026 16.4341L5.34154 16.4308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>72</span>
+                          </button>
+                        </li>
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button "
+                            type="button"
+                            aria-label="Share" 
+                            title="Share"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 13.9616L4.1719 11.2951C3.36454 10.9281 3.39898 9.7697 4.22673 9.45134L18.8999 3.80781C19.7087 3.49675 20.5033 4.29139 20.1922 5.10013L14.5487 19.7733C14.2303 20.6011 13.072 20.6355 12.705 19.8281L10.0384 13.9616ZM10.0384 13.9616L14.4231 9.57704" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>18</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="blog-card__link button" href="/">
+                    <span class="icon icon--yellow-arrow">Read More</span>
+                  </a>
+                </article>
+              </li>
+              <li class="list__item">
+                <article class="blog-card container">
+                  <div class="blog-card__person person-card">
+                    <img
+                      class="person-card__image" 
+                      src="./images/blog/3.png" 
+                      alt=""
+                      width="80" height="80" loading="lazy" 
+                    >
+                    <div class="person-card__wrapper">
+                      <p class="person-card__name">Astronomer X</p>
+                      <p class="person-card__role">Space Exploration</p>
+                    </div>
+                  </div>
+                  <div class="blog-card__main">
+                    <time class="blog-card__date" datetime="2023-12-10">December 10, 2023</time>
+                    <div class="blog-card__info">
+                      <h4 class="blog-card__title">Tech Startups Secure Record Funding</h4>
+                      <div class="blog-card__description">
+                        <p>An overview of the recent surge in funding for tech startups, shaping the entrepreneurial landscape.</p> 
+                      </div>
+                    </div>
+                    <div class="blog-card__actions actions">
+                      <ul class="actions__list">
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button"
+                            type="button"
+                            aria-label="Dislike" 
+                            title="Dislike"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.645 20.9107L11.6384 20.9071L11.6158 20.8949C11.5965 20.8844 11.5689 20.8693 11.5336 20.8496C11.4629 20.8101 11.3612 20.7524 11.233 20.6769C10.9765 20.5261 10.6132 20.3039 10.1785 20.015C9.31074 19.4381 8.15122 18.5901 6.9886 17.5063C4.68781 15.3615 2.25 12.1751 2.25 8.25C2.25 5.32194 4.7136 3 7.6875 3C9.43638 3 11.0023 3.79909 12 5.0516C12.9977 3.79909 14.5636 3 16.3125 3C19.2864 3 21.75 5.32194 21.75 8.25C21.75 12.1751 19.3122 15.3615 17.0114 17.5063C15.8488 18.5901 14.6893 19.4381 13.8215 20.015C13.3868 20.3039 13.0235 20.5261 12.767 20.6769C12.6388 20.7524 12.5371 20.8101 12.4664 20.8496C12.4311 20.8693 12.4035 20.8844 12.3842 20.8949L12.3616 20.9071L12.355 20.9107L12.3523 20.9121C12.1323 21.0289 11.8677 21.0289 11.6477 20.9121L11.645 20.9107Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>20k</span>
+                          </button>
+                        </li>
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button"
+                            type="button"
+                            aria-label="Comment" 
+                            title="Comment"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.48581 19.1888C9.54657 19.7083 10.7392 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 13.6401 4.49356 15.165 5.34026 16.4341M8.48581 19.1888L4 20L5.34026 16.4341M8.48581 19.1888L8.49231 19.1877M5.34026 16.4341L5.34154 16.4308" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>31</span>
+                          </button>
+                        </li>
+                        <li class="actions__item">
+                          <button 
+                            class="actions__button "
+                            type="button"
+                            aria-label="Share" 
+                            title="Share"
+                          >
+                            <span class="actions__icon-wrapper">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0384 13.9616L4.1719 11.2951C3.36454 10.9281 3.39898 9.7697 4.22673 9.45134L18.8999 3.80781C19.7087 3.49675 20.5033 4.29139 20.1922 5.10013L14.5487 19.7733C14.2303 20.6011 13.072 20.6355 12.705 19.8281L10.0384 13.9616ZM10.0384 13.9616L14.4231 9.57704" stroke="#666666" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                            </span>
+                            <span>12</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a class="blog-card__link button" href="/">
+                    <span class="icon icon--yellow-arrow">Read More</span>
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-2"
+            aria-labelledby="tab-2"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellendus? Adi291
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-3"
+            aria-labelledby="tab-3"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellendus? Omytemaa_official
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-4"
+            aria-labelledby="tab-4"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellendus? Pasanchik
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-5"
+            aria-labelledby="tab-5"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellendus?
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-6"
+            aria-labelledby="tab-6"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellendus?
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="videos-title">
+      <header class="section__header">
+        <div class="section__header-inner container">
+          <div class="section__header-info">
+            <p class="section__subtitle tag">Featured Videos</p>
+            <h2 class="section__title" id="videos-title">Visual Insights for the Modern Viewer</h2>
+          </div>
+          <div class="section__view">
+            <a class="section__link button" href="/">
+              <span class="icon icon--yellow-arrow">View All</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <div class="section__body tabs">
+        <ul class="bordered-grid bordered-grid--2-cols container">
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video 
+                  class="video-player__video"
+                  src="./videos/example.mp4" 
+                  width="718" height="412"
+                  poster="./images/videos/1.jpg"
+                  data-js-video-player-video 
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button 
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 28.4375C0 12.7319 12.7319 0 28.4375 0C44.1431 0 56.875 12.7319 56.875 28.4375C56.875 44.1431 44.1431 56.875 28.4375 56.875C12.7319 56.875 0 44.1431 0 28.4375ZM40.9038 25.5693C43.1542 26.8195 43.1542 30.0558 40.9038 31.306L24.5623 40.3846C22.3752 41.5996 19.6875 40.0182 19.6875 37.5163V19.359C19.6875 16.8571 22.3752 15.2756 24.5623 16.4906L40.9038 25.5693Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">
+                    2.30 min
+                  </div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h5">Mars Exploration: Unveiling Alien Landscapes</h3>
+                <div class="video-card__description">
+                  <p>
+                    Embark on a journey through the Red Planet's breathtaking landscapes and uncover the mysteries of Mars.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video 
+                  class="video-player__video"
+                  src="./videos/example.mp4" 
+                  width="718" height="412"
+                  poster="./images/videos/2.jpg"
+                  data-js-video-player-video 
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button 
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 28.4375C0 12.7319 12.7319 0 28.4375 0C44.1431 0 56.875 12.7319 56.875 28.4375C56.875 44.1431 44.1431 56.875 28.4375 56.875C12.7319 56.875 0 44.1431 0 28.4375ZM40.9038 25.5693C43.1542 26.8195 43.1542 30.0558 40.9038 31.306L24.5623 40.3846C22.3752 41.5996 19.6875 40.0182 19.6875 37.5163V19.359C19.6875 16.8571 22.3752 15.2756 24.5623 16.4906L40.9038 25.5693Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">
+                    2.30 min
+                  </div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h5">Blockchain Explained: A Revolution in Finance</h3>
+                <div class="video-card__description">
+                  <p>
+                    Delve into the world of blockchain technology and its transformative impact on the financial industry.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video 
+                  class="video-player__video"
+                  src="./videos/example.mp4" 
+                  width="718" height="412"
+                  poster="./images/videos/3.jpg"
+                  data-js-video-player-video 
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button 
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 28.4375C0 12.7319 12.7319 0 28.4375 0C44.1431 0 56.875 12.7319 56.875 28.4375C56.875 44.1431 44.1431 56.875 28.4375 56.875C12.7319 56.875 0 44.1431 0 28.4375ZM40.9038 25.5693C43.1542 26.8195 43.1542 30.0558 40.9038 31.306L24.5623 40.3846C22.3752 41.5996 19.6875 40.0182 19.6875 37.5163V19.359C19.6875 16.8571 22.3752 15.2756 24.5623 16.4906L40.9038 25.5693Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">
+                    2.30 min
+                  </div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h5">Breaking the Silence: Mental Health Awareness in the Workplace</h3>
+                <div class="video-card__description">
+                  <p>
+                    An exploration of the importance of mental health awareness and the initiatives reshaping workplaces for employee well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="video-card">
+              <div class="video-card__player video-player" data-js-video-player>
+                <video 
+                  class="video-player__video"
+                  src="./videos/example.mp4" 
+                  width="718" height="412"
+                  poster="./images/videos/4.jpg"
+                  data-js-video-player-video 
+                ></video>
+                <div class="video-player__panel is-active" data-js-video-player-panel>
+                  <button 
+                    class="video-player__play-button"
+                    type="button"
+                    aria-label="Play video"
+                    title="Play video"
+                    data-js-video-player-play-button
+                  >
+                    <svg width="57" height="57" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 28.4375C0 12.7319 12.7319 0 28.4375 0C44.1431 0 56.875 12.7319 56.875 28.4375C56.875 44.1431 44.1431 56.875 28.4375 56.875C12.7319 56.875 0 44.1431 0 28.4375ZM40.9038 25.5693C43.1542 26.8195 43.1542 30.0558 40.9038 31.306L24.5623 40.3846C22.3752 41.5996 19.6875 40.0182 19.6875 37.5163V19.359C19.6875 16.8571 22.3752 15.2756 24.5623 16.4906L40.9038 25.5693Z" fill="white"/>
+                    </svg>
+                  </button>
+                  <div class="video-player__duration">
+                    2.30 min
+                  </div>
+                </div>
+              </div>
+              <div class="video-card__body">
+                <h3 class="video-card__title h5">Revolutionizing Investment Strategies</h3>
+                <div class="video-card__description">
+                  <p>
+                    An in-depth look at global efforts to conserve biodiversity and safeguard endangered species from extinction.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
     <!-- <section class="about" aria-labelledby="about-title">
       <div class="about__wrapper container">
         <header class="about__header">
