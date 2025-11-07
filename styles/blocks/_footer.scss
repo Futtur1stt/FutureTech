@@ -1,6 +1,8 @@
 @use '../helpers' as *;
 
 .footer {
+  border-top: var(--border);
+
   &__main {
     display: flex;
     justify-content: space-between;
