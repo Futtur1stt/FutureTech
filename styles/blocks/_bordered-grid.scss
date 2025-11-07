@@ -31,14 +31,22 @@
         }
 
         &:nth-child(even) {
-          @include full-vw-centered-line(
-            bottom,
-            auto
-            100%,
-            50
-          );
+          // @include full-vw-centered-line(
+          //   bottom,
+          //   auto
+          //   100%,
+          //   50
+          // );
 
           padding-left: rem(50);
+        }
+
+        &:first-child {
+          border-bottom: var(--border);
+        }
+
+        &:nth-child(2) {
+          border-bottom: var(--border);
         }
       }
     }
@@ -66,8 +74,14 @@
         }
 
         /* Элементы в 1 ряду */
-        &:nth-child(3n - 1) {
-          @include full-vw-centered-line(bottom);
+        // &:nth-child(3n - 1) {
+          // @include full-vw-centered-line(bottom);
+          // border-bottom: var(--border);
+        // }
+
+        /* Элементы в 1 ряду */
+        &:nth-child(-n + 3) {
+          border-bottom: var(--border);
         }
 
         /* Элементы во 2-ой и 3-ой колонке */
