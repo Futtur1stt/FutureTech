@@ -751,6 +751,9 @@ button[aria-label]::before {
   }
 }
 
+.footer {
+  border-top: var(--border);
+}
 .footer__main {
   display: flex;
   justify-content: space-between;
@@ -1639,19 +1642,13 @@ button[aria-label]::before {
     border-right: var(--border);
   }
   .bordered-grid--2-cols .bordered-grid__item:nth-child(even) {
-    position: relative;
     padding-left: 3.125rem;
   }
-  .bordered-grid--2-cols .bordered-grid__item:nth-child(even)::before {
-    content: "";
-    position: absolute;
-    left: auto 100%;
-    right: 50;
-    bottom: 0;
-    translate: -50%;
-    width: 100vw;
-    height: 0.0625rem;
-    background-color: var(--color-dark-15);
+  .bordered-grid--2-cols .bordered-grid__item:first-child {
+    border-bottom: var(--border);
+  }
+  .bordered-grid--2-cols .bordered-grid__item:nth-child(2) {
+    border-bottom: var(--border);
   }
 }
 .bordered-grid--3-cols {
@@ -1660,6 +1657,7 @@ button[aria-label]::before {
 @media (width > 63.99875rem) {
   .bordered-grid--3-cols .bordered-grid__item {
     /* Элементы во 1-ой и 2-ой колонке */
+    /* Элементы в 1 ряду */
     /* Элементы в 1 ряду */
     /* Элементы во 2-ой и 3-ой колонке */
   }
@@ -1680,19 +1678,8 @@ button[aria-label]::before {
   }
 }
 @media (width > 63.99875rem) {
-  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1) {
-    position: relative;
-  }
-  .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1)::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    right: auto;
-    bottom: 0;
-    translate: -50%;
-    width: 100vw;
-    height: 0.0625rem;
-    background-color: var(--color-dark-15);
+  .bordered-grid--3-cols .bordered-grid__item:nth-child(-n+3) {
+    border-bottom: var(--border);
   }
   .bordered-grid--3-cols .bordered-grid__item:nth-child(3n-1), .bordered-grid--3-cols .bordered-grid__item:nth-child(3n) {
     padding-left: 3.125rem;
