@@ -69,11 +69,11 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  @include fluid-text(24, 18);
+  @include fluid-text(26, 18);
 }
 
 h5, .h5 {
-  @include fluid-text(22, 16);
+  @include fluid-text(24, 18);
 }
 
 h6, .h6 {
