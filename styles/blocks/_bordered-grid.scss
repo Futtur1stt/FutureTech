@@ -8,6 +8,40 @@
 
   &--2-cols {
     --columns: 2;
+
+    @include tablet {
+      --columns: 1;
+    }
+
+    .bordered-grid__item {
+      @include laptop-above {
+        &:nth-child(odd) {
+          padding-right: rem(80);
+        }
+
+        &:nth-child(even) {
+          padding-left: rem(80);
+        }
+      }
+
+      @include tablet-above {
+        &:nth-child(odd) {
+          padding-right: rem(50);
+          border-right: var(--border);
+        }
+
+        &:nth-child(even) {
+          @include full-vw-centered-line(
+            bottom,
+            auto
+            100%,
+            50
+          );
+
+          padding-left: rem(50);
+        }
+      }
+    }
   }
 
   &--3-cols {
@@ -55,10 +89,6 @@
     @include tablet {
       --columns: 1;
 
-      .bordered-grid__item:not(:last-child) {
-        border-bottom: var(--border);
-      }
-
       &::after {
         display: none;
       }
@@ -67,5 +97,11 @@
 
   &__item {
     padding-block: fluid(80, 40);
+
+    @include tablet {
+      &:not(:last-child) {
+        border-bottom: var(--border);
+      }
+    }
   }
 }
