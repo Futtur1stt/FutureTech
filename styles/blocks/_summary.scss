@@ -1,6 +1,48 @@
 @use '../helpers' as *;
 
 .summary {
+  &--2-cols {
+    .summary {
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(30) rem(20);
+      
+
+        @include laptop {
+          gap: rem(20);
+        }
+      }
+
+      &__item {
+        color: var(--color-gray-60);
+        row-gap: rem(10);
+
+        @include laptop {
+          row-gap: rem(6);
+        }
+
+        @include mobile {
+          row-gap: rem(4);
+        }
+
+        &--wide {
+          grid-column: -1 / 1;
+          row-gap: rem(16);
+          margin-top: rem(20);
+
+          @include laptop {
+            row-gap: rem(14);
+          }
+
+          @include mobile {
+            row-gap: rem(10);
+          }
+        }
+      }
+    }
+  }
+
   &__list {
     display: flex;
     column-gap: fluid(50, 20);
@@ -21,5 +63,13 @@
 
   &__value {
     color: var(--color-light);
+  }
+
+  &__tile {
+    padding: rem(20);
+
+    @include laptop {
+      padding: rem(18);
+    }
   }
 }
