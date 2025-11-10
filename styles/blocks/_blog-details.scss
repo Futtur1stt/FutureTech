@@ -1,0 +1,133 @@
+@use '../helpers' as *;
+
+.blog-details {
+  &__banner {
+    display: flex;
+    align-items: end;
+    min-height: fluid(598, 281);
+    padding-block: fluid(65, 17);
+    background:
+      linear-gradient(
+        180deg,
+        rgba(20, 20, 20, 0) 0%,
+        rgba(20, 20, 20, 0.88) 75.52%,
+        #141414 100%
+      ),
+      var(--bgImg) center/cover no-repeat;
+  }
+
+  &__title {
+    @include fluid-text(64, 28);
+
+    font-weight: 600;
+    text-align: center;
+  }
+
+  &__body {
+    border-block: var(--border);
+
+    &:has(p) {
+      color: var(--color-gray-60)
+    }
+
+    &-wrapper {
+      display: grid;
+      grid-template-columns: 1fr rem(520);
+      border-bottom: var(--border);
+
+      @include tablet {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &__content {
+    @include tablet-above {
+      border-right: var(--border);
+    }
+  }
+
+  &__intro,
+  &__main {
+    display: grid;
+    padding-block: fluid(80, 40);
+
+    @include laptop-above {
+      padding-right: rem(80);
+    }
+
+    @include tablet-above {
+      padding-right: rem(60);
+    }
+  }
+
+  &__intro {
+    row-gap: rem(14);
+    border-bottom: var(--border);
+
+    @include laptop {
+      row-gap: rem(6);
+    }
+  }
+
+  &__unique-title {
+    @include fluid-text (20, 18);
+
+    font-family: var(--font-fanily-base);
+  }
+
+  &__main {
+    --initialMaxHeight: #{rem(741)};
+
+    row-gap: rem(24);
+
+    @include laptop {
+      --initialMaxHeight: #{rem(692)};
+    }
+
+    @include mobile {
+      --initialMaxHeight: #{rem(669)};
+    }
+
+    &-unique-title {
+      @include fluid-text (28, 18);
+
+      font-family: var(--font-fanily-base);
+    }
+  }
+
+  &__button {
+    justify-self: center;
+    width: fluid(195, 152);
+  }
+
+  &__actions,
+  &__summary {
+    @include laptop-above {
+      padding-left: rem(80);
+    }
+
+    @include tablet-above {
+      padding-left: rem(60);
+    }
+  }
+
+  &__actions {
+    padding-block: fluid(50, 20);
+    border-bottom: var(--border);
+
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__summary {
+    padding-block: fluid(80, 40);
+
+    @include tablet {
+      border-bottom: var(--border);
+    }
+  }
+}
