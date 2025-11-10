@@ -33,4 +33,10 @@
     }
   }
 
+  &--gray-arrow {
+    &::after {
+      background-image: url(../../icons/gray-arrow_down.svg);
+    }
+  }
+
 }
