@@ -3,6 +3,22 @@
 .news {
   padding-block: fluid(80, 40);
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: rem(80);
+    padding-bottom: rem(60);
+
+    @include laptop {
+      padding-bottom: rem(40);
+    }
+  }
+
+  &__title {
+    @include fluid-text (28, 20);
+  }
+
   &__list {
     display: grid;
     gap: rem(30);
