@@ -467,6 +467,37 @@ button[aria-label]::before {
   content: "";
 }
 
+.expandable-content {
+  --initialMaxHeight: 31.25rem;
+  position: relative;
+  overflow-y: hidden;
+}
+.expandable-content.is-expanded::before,
+.expandable-content.is-expanded .expandable-content__button {
+  opacity: 0;
+  visibility: hidden;
+}
+.expandable-content:not(.is-expanded) {
+  max-height: var(--initialMaxHeight);
+}
+.expandable-content::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, #141414 77.38%);
+  pointer-events: none;
+  transition-duration: var(--transition-duration);
+}
+.expandable-content__button {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 4.25rem;
+}
+
 .icon {
   display: inline-flex;
   align-items: center;
@@ -492,6 +523,9 @@ button[aria-label]::before {
 }
 .icon--yellow-eye::after {
   background-image: url(../../icons/yellow-eye.svg);
+}
+.icon--gray-arrow::after {
+  background-image: url(../../icons/gray-arrow_down.svg);
 }
 
 .logo__image {
@@ -2035,6 +2069,45 @@ button[aria-label]::before {
   column-gap: 3.125rem;
 }
 
+.summary--2-cols .summary__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.875rem 1.25rem;
+}
+@media (width <= 90.06125rem) {
+  .summary--2-cols .summary__list {
+    gap: 1.25rem;
+  }
+}
+.summary--2-cols .summary__item {
+  color: var(--color-gray-60);
+  row-gap: 0.625rem;
+}
+@media (width <= 90.06125rem) {
+  .summary--2-cols .summary__item {
+    row-gap: 0.375rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .summary--2-cols .summary__item {
+    row-gap: 0.25rem;
+  }
+}
+.summary--2-cols .summary__item--wide {
+  grid-column: -1/1;
+  row-gap: 1rem;
+  margin-top: 1.25rem;
+}
+@media (width <= 90.06125rem) {
+  .summary--2-cols .summary__item--wide {
+    row-gap: 0.875rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .summary--2-cols .summary__item--wide {
+    row-gap: 0.625rem;
+  }
+}
 .summary__list {
   display: flex;
   column-gap: clamp(1.25rem, 0.7720588235rem + 1.9607843137vw, 3.125rem);
@@ -2054,9 +2127,32 @@ button[aria-label]::before {
 .summary__value {
   color: var(--color-light);
 }
+.summary__tile {
+  padding: 1.25rem;
+}
+@media (width <= 90.06125rem) {
+  .summary__tile {
+    padding: 1.125rem;
+  }
+}
 
 .news {
   padding-block: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+}
+.news__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 5rem;
+  padding-bottom: 3.75rem;
+}
+@media (width <= 90.06125rem) {
+  .news__header {
+    padding-bottom: 2.5rem;
+  }
+}
+.news__title {
+  font-size: clamp(1.25rem, 1.1225490196rem + 0.522875817vw, 1.75rem);
 }
 .news__list {
   display: grid;
@@ -2154,6 +2250,135 @@ button[aria-label]::before {
 }
 .video-player__duration {
   padding-right: 1.25rem;
+}
+
+.blog-details__banner {
+  display: flex;
+  align-items: end;
+  min-height: clamp(17.5625rem, 12.512254902rem + 20.7189542484vw, 37.375rem);
+  padding-block: clamp(1.0625rem, 0.2977941176rem + 3.137254902vw, 4.0625rem);
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.88) 75.52%, #141414 100%), var(--bgImg) center/cover no-repeat;
+}
+.blog-details__title {
+  font-size: clamp(1.75rem, 1.1764705882rem + 2.3529411765vw, 4rem);
+  font-weight: 600;
+  text-align: center;
+}
+.blog-details__body {
+  border-block: var(--border);
+}
+.blog-details__body:has(p) {
+  color: var(--color-gray-60);
+}
+.blog-details__body-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 32.5rem;
+  border-bottom: var(--border);
+}
+@media (width <= 63.99875rem) {
+  .blog-details__body-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+@media (width > 63.99875rem) {
+  .blog-details__content {
+    border-right: var(--border);
+  }
+}
+.blog-details__intro, .blog-details__main {
+  display: grid;
+  padding-block: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+}
+@media (width > 90.06125rem) {
+  .blog-details__intro, .blog-details__main {
+    padding-right: 5rem;
+  }
+}
+@media (width > 63.99875rem) {
+  .blog-details__intro, .blog-details__main {
+    padding-right: 3.75rem;
+  }
+}
+.blog-details__intro {
+  row-gap: 0.875rem;
+  border-bottom: var(--border);
+}
+@media (width <= 90.06125rem) {
+  .blog-details__intro {
+    row-gap: 0.375rem;
+  }
+}
+.blog-details__unique-title {
+  font-size: clamp(1.125rem, 1.0931372549rem + 0.1307189542vw, 1.25rem);
+  font-family: var(--font-fanily-base);
+}
+.blog-details__main {
+  --initialMaxHeight: 46.3125rem;
+  row-gap: 1.5rem;
+}
+@media (width <= 90.06125rem) {
+  .blog-details__main {
+    --initialMaxHeight: 43.25rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .blog-details__main {
+    --initialMaxHeight: 41.8125rem;
+  }
+}
+.blog-details__main-unique-title {
+  font-size: clamp(1.125rem, 0.9656862745rem + 0.6535947712vw, 1.75rem);
+  font-family: var(--font-fanily-base);
+}
+.blog-details__button {
+  justify-self: center;
+  width: clamp(9.5rem, 8.8149509804rem + 2.8104575163vw, 12.1875rem);
+}
+@media (width > 90.06125rem) {
+  .blog-details__actions, .blog-details__summary {
+    padding-left: 5rem;
+  }
+}
+@media (width > 63.99875rem) {
+  .blog-details__actions, .blog-details__summary {
+    padding-left: 3.75rem;
+  }
+}
+.blog-details__actions {
+  padding-block: clamp(1.25rem, 0.7720588235rem + 1.9607843137vw, 3.125rem);
+  border-bottom: var(--border);
+}
+@media (width <= 63.99875rem) {
+  .blog-details__actions {
+    display: flex;
+    justify-content: center;
+  }
+}
+.blog-details__summary {
+  padding-block: clamp(2.5rem, 1.862745098rem + 2.614379085vw, 5rem);
+}
+@media (width <= 63.99875rem) {
+  .blog-details__summary {
+    border-bottom: var(--border);
+  }
+}
+
+.table-of-contents {
+  padding: 1.25rem;
+}
+.table-of-contents__list {
+  display: grid;
+  row-gap: 1.25rem;
+}
+@media (width <= 90.06125rem) {
+  .table-of-contents__list {
+    row-gap: 1rem;
+  }
+}
+.table-of-contents__item {
+  list-style-type: disc;
+  margin-left: 1.5em;
 }
 
 /*# sourceMappingURL=main.css.map */

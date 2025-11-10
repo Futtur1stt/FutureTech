@@ -4,6 +4,8 @@
 @use 'utils';
 @use 'globals';
 
+@use 'blocks/expandable-content';
+
 @use 'blocks/icon';
 @use 'blocks/logo';
 @use 'blocks/button';
@@ -47,3 +49,6 @@
 
 @use 'blocks/video-card';
 @use 'blocks/video-player';
+
+@use 'blocks/blog-details';
+@use 'blocks/table-of-contents';
