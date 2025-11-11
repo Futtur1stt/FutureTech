@@ -4,8 +4,9 @@
   position: relative; 
 
   &__video {
-    width: fluid(718, 358);
+    width: 100%;
     height: fluid(412, 210);
+    object-fit: cover;
     border-radius: rem(12);
 
     @include laptop {
@@ -22,6 +23,11 @@
     column-gap: 1rem;
     padding: rem(30);
     transition-duration: var(--transition-duration);
+
+    &--center {
+      justify-content: center;
+      align-items: center;
+    }
 
     &:not(.is-active) {
       @include hide;
