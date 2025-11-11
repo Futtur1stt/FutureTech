@@ -4,6 +4,50 @@
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+
+    &--4-cols {
+      @include tablet-above {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
+      @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .metrics__item {
+        justify-content: center;
+        align-items: center;
+        border-right: none;
+
+        @include tablet {
+          &:first-child,
+          &:last-child {
+            padding: rem(30);
+          }
+
+          &:not(:last-child) {
+            border-right: none;
+          }
+
+          &:nth-child(odd) {
+            border-right: var(--border);
+            padding-left: 0;
+          }
+
+          &:nth-child(even) {
+            padding-right: 0;
+          }
+
+          &:nth-child(-n + 2) {
+            border-bottom: var(--border);
+          }
+        }
+      }
+
+      .metrics__key {
+        text-align: center;
+      }
+    }
   }
 
   &__item {
@@ -40,6 +84,7 @@
 
   &__key {
     font-weight: 600;
+    color: var(--color-gray-60);
   }
 
   &__sign {
