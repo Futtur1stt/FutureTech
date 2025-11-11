@@ -11,6 +11,10 @@
     row-gap: rem(30);
   }
 
+  @include tablet {
+    row-gap: rem(20);
+  }
+
   &__body {
     display: grid;
     row-gap: fluid(10, 4);
@@ -23,5 +27,11 @@
 
   &__description {
     color: var(--color-gray-60);
+  }
+
+  &__link {
+    @include mobile-s {
+      width: 100%;
+    }
   }
 }

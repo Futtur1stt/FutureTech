@@ -12,6 +12,10 @@
     @include laptop {
       border-radius: rem(10);
     }
+
+    &--alt {
+      height: fluid(290, 280);
+    }
   }
 
   &__panel {

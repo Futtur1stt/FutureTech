@@ -2238,6 +2238,11 @@ button[aria-label]::before {
     row-gap: 1.875rem;
   }
 }
+@media (width <= 63.99875rem) {
+  .video-card {
+    row-gap: 1.25rem;
+  }
+}
 .video-card__body {
   display: grid;
   row-gap: clamp(0.25rem, 0.1544117647rem + 0.3921568627vw, 0.625rem);
@@ -2248,6 +2253,11 @@ button[aria-label]::before {
 }
 .video-card__description {
   color: var(--color-gray-60);
+}
+@media (width <= 30.06125rem) {
+  .video-card__link {
+    width: 100%;
+  }
 }
 
 .video-player {
@@ -2263,6 +2273,9 @@ button[aria-label]::before {
   .video-player__video {
     border-radius: 0.625rem;
   }
+}
+.video-player__video--alt {
+  height: clamp(17.5rem, 17.3406862745rem + 0.6535947712vw, 18.125rem);
 }
 .video-player__panel {
   position: absolute;
