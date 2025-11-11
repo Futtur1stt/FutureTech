@@ -54,6 +54,10 @@
     @include tablet {
       border-top: none;
     }
+
+    &:has(.metrics__list--4-cols) {
+      border-top: none;
+    }
   }
 
   &__resources {
