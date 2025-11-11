@@ -28,7 +28,7 @@
   &__title {
     grid-column: -1 / 1;
 
-    &-hidden-pard {
+    &-hidden-part {
       @include mobile-above {
         @include visually-hidden;
       }
