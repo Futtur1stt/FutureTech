@@ -38,4 +38,10 @@
   &__description {
     color: var(--color-gray-60);
   }
+
+  &:has(.metrics__list--4-cols) {
+    .hero-alt__body {
+      border-bottom: var(--border);
+    }
+  }
 }
