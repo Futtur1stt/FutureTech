@@ -22,6 +22,35 @@
     @include tablet {
       width: max-content;
     }
+
+    &--3-cols {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: rem(10);
+      padding: rem(10);
+      background-color: var(--color-dark);
+      border-radius: rem(10);
+      max-width: rem(495);
+
+      @include mobile-s {
+        max-width: rem(358);
+      }
+
+      .tabs__button {
+        padding: rem(18);
+
+        &.is-active {
+          background-color: var(--color-dark-15);
+        }
+
+        @include laptop {
+          padding: rem(14);
+        }
+
+        @include mobile-s {
+          max-width: rem(106);
+        }
+      }
+    }
   }
 
   &__button {
