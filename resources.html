@@ -109,7 +109,289 @@
       </div>
     </section>
 
-    <!-- <section class="about" aria-labelledby="about-title">
+    <section class="section tabs" aria-labelledby="reports-title" data-js-tabs>
+      <header class="section__header">
+        <div class="section__header-inner container">
+          <div class="section__header-info">
+            <p class="section__subtitle tag">Dive into the Details</p>
+            <h2 class="section__title" id="reports-title">In-Depth Reports and Analysis</h2>
+          </div>
+          <div class="section__view">
+            <div 
+              class="tabs__buttons tabs__buttons--3-cols"
+              role="tablist"
+              aria-labelledby="blog-category-title"  
+            >
+              <button 
+                class="tabs__button is-active"
+                id="tab-1"
+                type="button"
+                role="tab"
+                aria-controls="tabpanel-1"
+                data-js-tabs-button
+                aria-selected="true"
+              >
+                Whitepapers
+              </button>
+              <button 
+                class="tabs__button"
+                id="tab-2"
+                type="button"
+                role="tab"
+                aria-controls="tabpanel-2"
+                data-js-tabs-button
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Ebooks
+              </button>
+              <button 
+                class="tabs__button"
+                id="tab-3"
+                type="button"
+                role="tab"
+                aria-controls="tabpanel-3"
+                data-js-tabs-button
+                aria-selected="false"
+                tabindex="-1"
+              >
+                Reports
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="section__body">
+        <div class="tabs__body">
+          <div 
+            class="tabs__content is-active" 
+            id="tabpanel-1"
+            aria-labelledby="tab-1"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            <ul class="list">
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__preview">
+                    <div class="card__preview-main">
+                      <img 
+                        class="card__preview-image" 
+                        src="./images/reports/icon-1.svg" 
+                        alt=""
+                        width="80" height="80" loading="lazy"
+                      >
+                      <div class="card__preview-info">
+                        <h3 class="card__preview-title">
+                          Quantum Computing Whitepaper
+                        </h3>
+                        <div class="card__preview-description">
+                          <p>Provides technical specifications and requirements for implementing quantum computing systems.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <div class="card__grid card__grid--3-cols">
+                      <div class="card__cell card__cell--wide">
+                        <img
+                          class="card__cell-image" 
+                          src="./images/reports/1.jpg" 
+                          alt=""
+                          width="917" height="332" loading="lazy" 
+                        >
+                      </div>
+                      <div class="card__cell card__cell--wide">
+                        <h4 class="card__cell-title">Quantum Computing Whitepaper</h4>
+                        <p class="card__cell-subtitle">An in-depth whitepaper exploring the principles, applications, and potential impact of quantum computing.</p>
+                        <a class="card__cell-link button button--dark-grey" href="/" download>
+                          <span class="icon icon--yellow-arrow">
+                            Download PDF Now
+                          </span>
+                        </a>
+                      </div>
+                      <div class="card__cell tile">
+                        <h4 class="card__cell-title">Publication Date</h4>
+                        <p class="card__cell-subtitle"><time datetime="2023-07">July 2023</time></p>
+                      </div>
+                      <div class="card__cell tile">
+                        <h4 class="card__cell-title">Category</h4>
+                        <p class="card__cell-subtitle">Quantum Computing</p>
+                      </div>
+                      <div class="card__cell tile">
+                        <h4 class="card__cell-title">Author</h4>
+                        <p class="card__cell-subtitle">Dr. Quantum</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="list__item">
+                <div class="card container">
+                  <div class="card__preview">
+                    <div class="card__preview-main">
+                      <img 
+                        class="card__preview-image" 
+                        src="./images/reports/icon-2.svg" 
+                        alt=""
+                        width="80" height="80" loading="lazy"
+                      >
+                      <div class="card__preview-info">
+                        <h3 class="card__preview-title">
+                          Space Exploration Whitepaper
+                        </h3>
+                        <div class="card__preview-description">
+                          <p>Explores Mars colonization, asteroid resource potential, and space tourism.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__body">
+                    <div class="card__grid card__grid--3-cols">
+                      <div class="card__cell card__cell--wide">
+                        <img
+                          class="card__cell-image" 
+                          src="./images/reports/2.jpg" 
+                          alt=""
+                          width="917" height="332" loading="lazy" 
+                        >
+                      </div>
+                      <div class="card__cell card__cell--wide">
+                        <h4 class="card__cell-title">Space Exploration Whitepaper</h4>
+                        <p class="card__cell-subtitle">An in-depth whitepaper covering the latest advancements in space exploration, including Mars missions and asteroid mining.</p>
+                        <a class="card__cell-link button button--dark-grey" href="/" download>
+                          <span class="icon icon--yellow-arrow">
+                            Download PDF Now
+                          </span>
+                        </a>
+                      </div>
+                      <div class="card__cell tile">
+                        <h4 class="card__cell-title">Publication Date</h4>
+                        <p class="card__cell-subtitle"><time datetime="2023-09">September 2023</time></p>
+                      </div>
+                      <div class="card__cell tile">
+                        <h4 class="card__cell-title">Category</h4>
+                        <p class="card__cell-subtitle">Space Exploration</p>
+                      </div>
+                      <div class="card__cell tile">
+                        <h4 class="card__cell-title">Author</h4>
+                        <p class="card__cell-subtitle">FutureTech Space Division</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="bordered-grid bordered-grid--3-cols container">
+                <li class="bordered-grid__item">
+                  <div class="report-card">
+                    <img 
+                      class="report-card__image" 
+                      src="./images/reports/3.jpg" 
+                      alt=""
+                      width="470" height="290" loading="lazy"
+                    >
+                    <div class="report-card__body">
+                      <h3 class="report-card__title">
+                        FutureTech Trends 2024
+                      </h3>
+                      <div class="report-card__description">
+                        <p>
+                          An ebook that predicts upcoming technology trends for the next year, including AI developments
+                        </p>
+                      </div>
+                    </div>
+                    <div class="report-card__actions">
+                      <a class="report-card__link button" href="/">
+                        View Details
+                      </a>
+                      <a class="report-card__link button button--dark-grey" href="/" download>
+                        Download PDF Now
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="bordered-grid__item">
+                  <div class="report-card">
+                    <img 
+                      class="report-card__image" 
+                      src="./images/reports/4.jpg" 
+                      alt=""
+                      width="470" height="290" loading="lazy"
+                    >
+                    <div class="report-card__body">
+                      <h3 class="report-card__title">
+                        Space Exploration Ebook
+                      </h3>
+                      <div class="report-card__description">
+                        <p>
+                          An ebook that predicts upcoming technology trends for the next year, including AI developments
+                        </p>
+                      </div>
+                    </div>
+                    <div class="report-card__actions">
+                      <a class="report-card__link button" href="/">
+                        View Details
+                      </a>
+                      <a class="report-card__link button button--dark-grey" href="/" download>
+                        Download PDF Now
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="bordered-grid__item">
+                  <div class="report-card">
+                    <img 
+                      class="report-card__image" 
+                      src="./images/reports/5.jpg" 
+                      alt=""
+                      width="470" height="290" loading="lazy"
+                    >
+                    <div class="report-card__body">
+                      <h3 class="report-card__title">
+                        Quantum Computing Whitepaper
+                      </h3>
+                      <div class="report-card__description">
+                        <p>
+                          An in-depth whitepaper exploring the principles,</br> applications.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="report-card__actions">
+                      <a class="report-card__link button" href="/">
+                        View Details
+                      </a>
+                      <a class="report-card__link button button--dark-grey" href="/" download>
+                        Download PDF Now
+                      </a>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-2"
+            aria-labelledby="tab-2"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellendus? Adi291
+          </div>
+          <div 
+            class="tabs__content" 
+            id="tabpanel-3"
+            aria-labelledby="tab-3"
+            tabindex="0"
+            data-js-tabs-content
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, repellendus? Omytemaa_official
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
       <div class="about__wrapper container">
         <header class="about__header">
           <img
@@ -161,7 +443,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
   </main>
 
