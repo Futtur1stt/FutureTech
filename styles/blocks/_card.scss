@@ -192,6 +192,25 @@
 
     &--wide {
       grid-column: -1 / 1;
+
+      &:has(.card__cell-link) {
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+
+        .card__cell-link {
+          @include mobile {
+            margin-top: rem(20);
+            margin-bottom: rem(10);
+          }
+
+          @include mobile-s {
+            width: 100%;
+          }
+        }
+      }
     }
 
     &-subtitle {
