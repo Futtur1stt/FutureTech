@@ -31,13 +31,6 @@
         }
 
         &:nth-child(even) {
-          // @include full-vw-centered-line(
-          //   bottom,
-          //   auto
-          //   100%,
-          //   50
-          // );
-
           padding-left: rem(50);
         }
 
@@ -74,12 +67,6 @@
         }
 
         /* Элементы в 1 ряду */
-        // &:nth-child(3n - 1) {
-          // @include full-vw-centered-line(bottom);
-          // border-bottom: var(--border);
-        // }
-
-        /* Элементы в 1 ряду */
         &:nth-child(-n + 3) {
           border-bottom: var(--border);
         }
@@ -102,10 +89,69 @@
 
     @include tablet {
       --columns: 1;
+    }
+  }
 
-      &::after {
-        display: none;
+  &--4-cols {
+    --columns: 4;
+
+    .bordered-grid__item {
+      @include laptop-above {
+        padding-inline: rem(50);
+
+        &:first-child {
+          padding-left: 0;
+        }
+
+        &:last-child {
+          padding-right: 0;
+        }
       }
+
+      @include tablet-above {
+        padding-inline: rem(30);
+
+        &:not(:last-child) {
+          border-right: var(--border);
+        }
+      }
+
+      @include tablet {
+        &:not(:last-child) {
+          border-bottom: none;
+        }
+
+        &:first-child,
+        &:nth-child(2) {
+          border-bottom: var(--border);
+        }
+      }
+
+      @include mobile-above {
+        &:nth-child(odd) {
+          border-right: var(--border);
+        }
+
+        &:nth-child(even) {
+          padding-left: rem(30);
+        }
+      }
+
+      @include mobile {
+        &:not(:last-child) {
+          border-bottom: var(--border);
+        }
+
+        padding-inline: 0;
+      }
+    }
+
+    @include tablet {
+      --columns: 2;
+    }
+
+    @include mobile {
+      --columns: 1;
     }
   }
 
