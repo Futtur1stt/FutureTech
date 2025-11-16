@@ -1,0 +1,31 @@
+@use '../helpers' as *;
+
+.contacts-card {
+  display: grid;
+  row-gap: fluid(50, 20);
+
+  &__title {
+    font-family: var(--font-family-base);
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: rem(15);
+
+    @include laptop {
+      row-gap: rem(10);
+    }
+
+    @include mobile {
+      padding-left: rem(50);
+    }
+  }
+
+  &__address {
+    @include fluid-text (20, 16);
+
+    color: var(--color-gray-60);
+  }
+}
