@@ -7,6 +7,7 @@
   <title>Future Tech | Contact</title>
   <link rel="icon" type="image/svg+xml" href="./images/about/icon-1.svg">
   <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.6.1/imask.min.js" defer></script>
   <script type="module" src="./scripts/main.js"></script>
 </head>
 <body>
@@ -75,7 +76,337 @@
 
   <main>
 
-    <section class="about" aria-labelledby="about-title">
+    <section class="contacts" aria-labelledby="contacts-title">
+      <header class="contacts__header">
+        <h1 class="visually-hidden" id="contacts-title">
+          Contacts
+        </h1>
+        <ul class="bordered-grid bordered-grid--4-cols container">
+          <li class="bordered-grid__item">
+            <div class="contacts-card">
+              <h2 class="contacts-card__title h6">
+                General Inquiries
+              </h2>
+              <div class="contacts-card__body">
+                <a  
+                  class="contacts-card__Link button button--dark-grey"
+                  href="mailto:contact@ai-podcasts.com"
+                >
+                  <span class="icon icon--yellow-arrow">contact@ai-podcasts.com</span>
+                </a>
+                <a  
+                  class="contacts-card__Link button button--dark-grey"
+                  href="tel:+11234567890"
+                >
+                  <span class="icon icon--yellow-arrow">+1 (123) 456-7890</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="contacts-card">
+              <h2 class="contacts-card__title h6">
+                Technical Support
+              </h2>
+              <div class="contacts-card__body">
+                <a  
+                  class="contacts-card__Link button button--dark-grey"
+                  href="mailto:contact@ai-podcasts.com"
+                >
+                  <span class="icon icon--yellow-arrow">contact@ai-podcasts.com</span>
+                </a>
+                <a  
+                  class="contacts-card__Link button button--dark-grey"
+                  href="tel:+11234567890"
+                >
+                  <span class="icon icon--yellow-arrow">+1 (123) 456-7890</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="contacts-card">
+              <h2 class="contacts-card__title h6">
+                Our Office
+              </h2>
+              <div class="contacts-card__body">
+                <address class="contacts-card__address">
+                  Address: 123 AI Tech Avenue, Techville, 54321
+                </address>
+                <a  
+                  class="contacts-card__Link button button--dark-grey"
+                  href="/"
+                >
+                  <span class="icon icon--yellow-arrow">Get Directions</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="bordered-grid__item">
+            <div class="contacts-card">
+              <h2 class="contacts-card__title h6">
+                Connect with Us
+              </h2>
+              <div class="contacts-card__body">
+                <div class="soc1als soc1als--3-cols">
+                  <ul class="soc1als__list">
+                    <li class="soc1als__item">
+                      <a class="soc1als__link" href="/" aria-label="Twitter" title="Twitter">
+                        <svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M20.457 4.78075C20.4663 4.99195 20.4663 5.19356 20.4663 5.40476C20.4755 11.808 15.7711 19.2 7.16783 19.2C4.63038 19.2 2.13924 18.4416 0 17.0208C0.370431 17.0688 0.740861 17.088 1.11129 17.088C3.21349 17.088 5.26011 16.3584 6.91779 15.0048C4.91746 14.9664 3.15792 13.6128 2.54671 11.6352C3.25053 11.7792 3.97287 11.7504 4.65816 11.5488C2.48188 11.1072 0.916816 9.11997 0.907555 6.80636C0.907555 6.78716 0.907555 6.76796 0.907555 6.74876C1.55581 7.12316 2.28741 7.33436 3.02827 7.35356C0.981641 5.93276 0.342648 3.10075 1.58359 0.883141C3.96361 3.91675 7.46418 5.75036 11.224 5.95196C10.8444 4.27195 11.363 2.50555 12.5761 1.31514C14.4561 -0.518463 17.4195 -0.422463 19.1976 1.52634C20.244 1.31514 21.2535 0.911941 22.1703 0.34554C21.8184 1.46874 21.0868 2.41915 20.1144 3.02395C21.0405 2.90875 21.948 2.64955 22.8 2.26555C22.1703 3.24475 21.3738 4.08955 20.457 4.78075Z" fill="white"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="soc1als__item">
+                      <a class="soc1als__link" href="/" aria-label="Medium" title="Medium">
+                        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M13.5374 6.8277C13.5374 10.5984 10.5069 13.6552 6.76883 13.6552C3.03073 13.6552 0 10.5977 0 6.8277C0 3.05767 3.0305 0 6.76883 0C10.5072 0 13.5374 3.05698 13.5374 6.8277Z" fill="white"/>
+                          <path d="M20.9627 6.82814C20.9627 10.3775 19.4474 13.2559 17.5783 13.2559C15.7091 13.2559 14.1938 10.3775 14.1938 6.82814C14.1938 3.27883 15.7089 0.400391 17.578 0.400391C19.4472 0.400391 20.9625 3.2779 20.9625 6.82814" fill="white"/>
+                          <path d="M24 6.82759C24 10.0069 23.4672 12.5858 22.8097 12.5858C22.1522 12.5858 21.6196 10.0076 21.6196 6.82759C21.6196 3.64758 22.1525 1.06934 22.8097 1.06934C23.467 1.06934 24 3.64735 24 6.82759Z" fill="white"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="soc1als__item">
+                      <a class="soc1als__link" href="/" aria-label="LinkedIn" title="LinkedIn">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M19.2646 0H1.53544C1.12822 0 0.737673 0.16177 0.449722 0.449722C0.16177 0.737673 0 1.12822 0 1.53544V19.2646C0 19.6718 0.16177 20.0623 0.449722 20.3503C0.737673 20.6382 1.12822 20.8 1.53544 20.8H19.2646C19.6718 20.8 20.0623 20.6382 20.3503 20.3503C20.6382 20.0623 20.8 19.6718 20.8 19.2646V1.53544C20.8 1.12822 20.6382 0.737673 20.3503 0.449722C20.0623 0.16177 19.6718 0 19.2646 0ZM6.19956 17.719H3.07233V7.78556H6.19956V17.719ZM4.63378 6.409C4.27905 6.407 3.93286 6.29997 3.6389 6.10141C3.34495 5.90285 3.11639 5.62166 2.98209 5.29333C2.84779 4.965 2.81376 4.60425 2.88429 4.25659C2.95483 3.90894 3.12676 3.58997 3.3784 3.33994C3.63004 3.08991 3.95011 2.92003 4.2982 2.85173C4.6463 2.78343 5.00683 2.81978 5.33429 2.95619C5.66175 3.09259 5.94147 3.32294 6.13814 3.61817C6.33481 3.9134 6.43961 4.26027 6.43933 4.615C6.44268 4.8525 6.39818 5.08823 6.30848 5.30816C6.21878 5.52809 6.08572 5.72771 5.91723 5.89512C5.74874 6.06254 5.54827 6.19431 5.32777 6.2826C5.10727 6.37088 4.87125 6.41387 4.63378 6.409ZM17.7262 17.7277H14.6004V12.3009C14.6004 10.7004 13.9201 10.2064 13.0419 10.2064C12.1146 10.2064 11.2046 10.9056 11.2046 12.3413V17.7277H8.07733V7.79278H11.0847V9.16933H11.1251C11.427 8.55833 12.4843 7.514 14.0978 7.514C15.8427 7.514 17.7277 8.54967 17.7277 11.583L17.7262 17.7277Z" fill="white"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </header>
+      <div class="contacts__body">
+        <div class="list">
+          <div class="list__item">
+            <div class="card container">
+              <div class="card__preview">
+                <div class="card__preview-main">
+                  <img
+                    class="card__preview-icon"
+                    src="./images/contacts/icon-1.svg"
+                    alt=""
+                    width="80" height="80" loading="lazy"
+                  />
+                  <div class="card__preview-info">
+                    <h2 class="card__preview-title">Get in Touch with AI Podcasts</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="card__body">
+                <form class="feedback-form" action="/">
+                  <div class="feedback-form__cell field">
+                    <label class="field__label" for="firstName">First Name <span class="field__required-star" aria-hidden="true">*</span></label>
+                    <input
+                      class="field__control"
+                      id="firstName"
+                      placeholder="Ivan"
+                      required
+                    />
+                  </div>
+                  <div class="feedback-form__cell field">
+                    <label class="field__label" for="lastName">Last Name</label>
+                    <input
+                      class="field__control"
+                      id="lastName"
+                      placeholder="Ivanov"
+                    />
+                  </div>
+                  <div class="feedback-form__cell field">
+                    <label class="field__label" for="email">Email <span class="field__required-star" aria-hidden="true">*</span></label>
+                    <input
+                      class="field__control"
+                      id="email"
+                      placeholder="example@email.com"
+                      required
+                      type="email"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="feedback-form__cell field">
+                    <label class="field__label" for="phoneNumber">Phone Number</label>
+                    <div class="field__body">
+                      <div class="select">
+                        SELECT
+                      </div>
+                      <input
+                        class="field__control"
+                        id="phoneNumber"
+                        placeholder="(999) 999-99-99"
+                        data-js-input-mask="(000) 000-00-00"
+                      />
+                    </div>
+                  </div>
+                  <div class="feedback-form__cell feedback-form__cell--wide field">
+                    <label class="field__label" for="message">Message <span class="field__required-star" aria-hidden="true">*</span></label>
+                    <textarea
+                      class="field__control"
+                      id="message"
+                      placeholder="Hi! I have an idea..."
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="feedback-form__cell feedback-form__cell--wide">
+                    <div class="feedback-form__actions">
+                      <div class="feedback-form__agreement">
+                        <label class="checkbox" for="checkbox">
+                          <input
+                            class="checkbox__input"
+                            id="checkbox"
+                            type="checkbox"
+                            required
+                          />
+                          <span class="checkbox__label">I agree with Terms of Use and Privacy Policy</span>
+                        </label>
+                      </div>
+                      <button
+                        class="feedback-form__submit-button button button--accent"
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="list__item">
+            <div class="card container">
+              <div class="card__preview">
+                <div class="card__preview-main">
+                  <img
+                    class="card__preview-icon"
+                    src="./images/contacts/icon-2.svg"
+                    alt=""
+                    width="80" height="80" loading="lazy"
+                  />
+                  <div class="card__preview-info">
+                    <h2 class="card__preview-title h3">Asked question</h2>
+                    <div class="card__preview-description">
+                      <p>If the question is not available on our FAQ section, Feel free to contact us personally, we will resolve your respective doubts. </p>
+                    </div>
+                  </div>
+                  <a class="card__preview-link button button--dark-gray" href="/">
+                    <span class="icon icon--yellow-arrow">Ask Question</span>
+                  </a>
+                </div>
+              </div>
+              <div class="card__body">
+                <div class="accordion-group">
+                  <div class="accordion tile">
+                    <details class="accordion__details" name="faq" open>
+                      <summary class="accordion__summary">
+                        <h3 class="accordion__title h6">
+                          <span role="term" aria-details="faq-1">What is AI?</span>
+                        </h3>
+                      </summary>
+                    </details>
+                    <div
+                      class="accordion__content"
+                      id="faq-1"
+                      role="definition"
+                    >
+                      <div class="accordion__content-inner">
+                        <div class="accordion__content-body">
+                          <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion tile">
+                    <details class="accordion__details" name="faq">
+                      <summary class="accordion__summary">
+                        <h3 class="accordion__title h6">
+                          <span role="term" aria-details="faq-2">How can I listen to your podcasts?</span>
+                        </h3>
+                      </summary>
+                    </details>
+                    <div
+                      class="accordion__content"
+                      id="faq-2"
+                      role="definition"
+                    >
+                      <div class="accordion__content-inner">
+                        <div class="accordion__content-body">
+                          <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion tile">
+                    <details class="accordion__details" name="faq">
+                      <summary class="accordion__summary">
+                        <h3 class="accordion__title h6">
+                          <span role="term" aria-details="faq-3">Are your podcasts free to listen to?</span>
+                        </h3>
+                      </summary>
+                    </details>
+                    <div
+                      class="accordion__content"
+                      id="faq-3"
+                      role="definition"
+                    >
+                      <div class="accordion__content-inner">
+                        <div class="accordion__content-body">
+                          <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion tile">
+                    <details class="accordion__details" name="faq">
+                      <summary class="accordion__summary">
+                        <h3 class="accordion__title h6">
+                          <span role="term" aria-details="faq-4">Can I download episodes to listen offline?</span>
+                        </h3>
+                      </summary>
+                    </details>
+                    <div
+                      class="accordion__content"
+                      id="faq-4"
+                      role="definition"
+                    >
+                      <div class="accordion__content-inner">
+                        <div class="accordion__content-body">
+                          <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion tile">
+                    <details class="accordion__details" name="faq">
+                      <summary class="accordion__summary">
+                        <h3 class="accordion__title h6">
+                          <span role="term" aria-details="faq-5">How often do you release new episodes?</span>
+                        </h3>
+                      </summary>
+                    </details>
+                    <div
+                      class="accordion__content"
+                      id="faq-5"
+                      role="definition"
+                    >
+                      <div class="accordion__content-inner">
+                        <div class="accordion__content-body">
+                          <p>AI stands for Artificial Intelligence, which refers to the simulation of human intelligence in machines. It enables them to perform tasks like problem-solving, learning, and decision-making.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="about" aria-labelledby="about-title">
       <div class="about__wrapper container">
         <header class="about__header">
           <img
@@ -127,7 +458,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
   </main>
 
