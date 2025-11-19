@@ -17,15 +17,6 @@ body {
   background-color: var(--color-dark);
 }
 
-.header,
-.footer {
-  display: none !important;
-}
-
-section:not(:last-child) {
-  display: none !important;
-}
-
 main {
   flex-grow: 1;
 }

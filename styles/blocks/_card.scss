@@ -72,6 +72,8 @@
     }
 
     &-description {
+      @include fluid-text (20, 14);
+
       color: var(--color-gray-60);
     }
 
@@ -91,6 +93,10 @@
           @include fluid-text(18, 14);
         }
       }
+    }
+
+    &-link {
+      max-width: rem(600);
     }
   }
 
@@ -231,6 +237,12 @@
 
     &-link {
       grid-area: link;
+    }
+
+    &-description {
+      &--unique-color {
+        color: var(--color-gray-60);
+      }
     }
   }
 }

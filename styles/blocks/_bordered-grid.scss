@@ -57,7 +57,7 @@
           border-right: var(--border);
 
           @include laptop {
-            padding-right: rem(40);
+            padding-right: rem(30);
           }
 
           @include tablet {
@@ -77,7 +77,7 @@
           padding-left: rem(50);
 
           @include laptop {
-            padding-left: rem(40);
+            padding-left: rem(30);
           }
 
           @include tablet {
@@ -108,9 +108,11 @@
         }
       }
 
-      @include tablet-above {
+      @include laptop {
         padding-inline: rem(30);
+      }
 
+      @include tablet-above {
         &:not(:last-child) {
           border-right: var(--border);
         }

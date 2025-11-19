@@ -84,6 +84,14 @@
     &-item {
       --paddingX: #{rem(80)};
 
+      padding-block: rem(50);
+
+      @include laptop {
+        --paddingX: #{rem(50)};
+
+        padding-block: rem(40);
+      }
+
       &:not(:first-child) {
         padding-left: var(--paddingX);
       }

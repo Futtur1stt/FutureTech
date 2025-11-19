@@ -21,7 +21,7 @@
       border-width: rem(1);
     }
 
-    @include mobile {
+    @include tablet {
       --personImageSize: #{rem(40)};
     }
 

@@ -76,5 +76,9 @@
 
   &__duration {
     padding-right: rem(20);
+
+    @include mobile-s {
+      padding-right: 0;
+    }
   }
 }

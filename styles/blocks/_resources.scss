@@ -20,13 +20,8 @@
   }
 
   &__team {
-    width: rem(218);
-    height: rem(88);
-
-    @include tablet {
-      width: rem(174);
-      height: rem(66);
-    }
+    width: fluid(218, 140);
+    height: fluid(88, 60);
   }
 
   &__main {
@@ -57,7 +52,6 @@
 
     @include mobile {
       max-width: rem(310);
-      // justify-self: center;
     }
   }
 }

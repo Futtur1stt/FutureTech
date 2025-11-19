@@ -25,11 +25,9 @@
       padding-block: rem(14);
     }
 
-    @include mobile {
-      font-size: rem(12);
-    }
-
     &-link {
+      color: var(--color-gray-60);
+
       .icon {
         @include mobile-s {
           column-gap: rem(5);
