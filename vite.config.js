@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
-import path from 'path'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  base: '/FutureTech',
+  base: '/FutureTech/',
   build: {
     rollupOptions: {
       input: {
@@ -17,7 +17,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './'),
+      '@': fileURLToPath(new URL('./', import.meta.url)),
     },
   },
 })
