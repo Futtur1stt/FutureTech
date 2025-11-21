@@ -1,3 +1,5 @@
+import '@/styles/main.scss'
+
 import Header from './Header.js'
 import TabsCollection from './Tabs.js'
 import VideoPlayerCollection from './VideoPlayer.js'
