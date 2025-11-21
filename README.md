@@ -1,6 +1,6 @@
 # FutureTech
-FutureTech / JS + NPM + HTML + SCSS + BEM / Semantic and adaptive layout</br>
-FutureTech / JS + NPM + HTML + SCSS + BEM / Семантический и адаптивный макет</br>
+FutureTech / JS + Vite + NPM + HTML + SCSS + BEM / Semantic and adaptive layout</br>
+FutureTech / JS + Vite + NPM + HTML + SCSS + BEM / Семантический и адаптивный макет</br>
 
 ## JavaScript компоненты, реализованные в проекте:
 1. Базовый абстрактный класс - основа для всех компонентов с автоматическим обновлением UI при изменении состояния.</br>
@@ -36,8 +36,14 @@ FutureTech / JS + NPM + HTML + SCSS + BEM / Семантический и ада
 3. Установите зависимости:
   npm install
 4. Запустите компиляцию SASS
-  npm run sass-watch
+  npm run dev
 5. Откройте файл index.html в браузере
+
+## Доступные команды
+
+- `npm run dev` - Запуск development-сервера с горячей перезагрузкой
+- `npm run build` - Сборка проекта для production в папку `dist`
+- `npm run preview` - Предпросмотр собранного проекта
 
 ## Структура проекта:
 FutureTech/
@@ -78,9 +84,14 @@ FutureTech/
 ├── README.md # Файл с описанием проекта</br>
 ├── package-lock.json # Фиксация точных версий зависимостей для воспроизводимости сборки </br>
 ├── package.json # Конфигурация проекта и список зависимостей npm </br>
+├── jsconfig.json # Конфигурация JavaScript для IDE и путей импорта </br>
+├── vite.config.js # Конфигурация Vite  </br>
 ├── index.html # Основная страница приложения</br>
 ├── news.html # Страница новостей приложения</br>
 ├── blog.html # Страница блога приложения</br>
 ├── podcasts.html # Страница подкастов приложения</br>
 ├── resources.html # Страница ресурсов приложения</br>
 ├── contact.html # Страница контактов приложения</br>
+</br>
+├── dist/ # Папка для Production - сборки
+</br>
