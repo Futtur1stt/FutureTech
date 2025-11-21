@@ -88,7 +88,7 @@
     content: '';
     right: 0;
     background:
-      url('../../icons/dark-arrow_top.svg') center no-repeat
+      url('@/icons/dark-arrow_top.svg') center no-repeat
       var(--color-accent);
     border-radius: 50%;
   }

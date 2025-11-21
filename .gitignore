@@ -16,3 +16,15 @@ Thumbs.db
 # Sass/SCSS
 .sass-cache/
 *.css.map
+
+# Vite
+dist/
+dist-ssr/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Optional cache directory
+.vite/
