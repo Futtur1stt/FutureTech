@@ -46,7 +46,11 @@ FutureTech / JS + Vite + NPM + HTML + SCSS + BEM / Семантический и
 - `npm run preview` - Предпросмотр собранного проекта
 
 ## Структура проекта:
-FutureTech/
+FutureTech/</br>
+├── github/workflows/ # Папка для автоматизации процессов: сборка, тестирование и деплой при изменении кода</br>
+│   ├── deploy.yml # Файл для конфигурации автоматического деплоя через GitHub Actions</br>
+│</br>
+├── dist/ # Папка для Production - сборки
 │</br>
 ├── fonts/ # Папка с файлами шрифтов
 </br>
@@ -92,6 +96,3 @@ FutureTech/
 ├── podcasts.html # Страница подкастов приложения</br>
 ├── resources.html # Страница ресурсов приложения</br>
 ├── contact.html # Страница контактов приложения</br>
-</br>
-├── dist/ # Папка для Production - сборки
-</br>
